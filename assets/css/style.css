@@ -2,6 +2,7 @@
 
 
 body {
+
   font-size: 24px;
   line-height: 32px;
   font-family: 'Arial', Helvetica Neue, Helvetica, sans-serif;
@@ -12,6 +13,7 @@ body {
 /* Header Files*/
 
 header {
+
   position: relative;	
   padding: 0px;
   height: 52px;
@@ -62,7 +64,8 @@ a:active {
 }
 
 
- #name{
+#name{
+
   position: absolute;
   text-align: center;
   padding: 16px;
@@ -189,10 +192,7 @@ aside {
   
 .box {
   
-  position: relative;
-  margin: 10px;
-  left: 0px;
-  width: 570px;
+  width: 590px;
   height: 40px;
   font-size: 20px;
 }
@@ -207,7 +207,7 @@ aside {
 
 .box-6 {
 
-  height: 260px;
+  height: 320px;
 
 }
 
@@ -221,10 +221,9 @@ aside {
 
 input {
   
-  position: relative;
-  margin: 10px;
-  left: 0px;
-  width: 570px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 590px;
   height: 40px;
   font-size: 20px;
 }
@@ -352,6 +351,50 @@ footer {
   left: 440px; 
   }
 
+  input {
+
+  width: 330px;  
+  }
+  .box {
+
+    width:330px;
+  }
+
+  .box-7{
+
+    width: 80px;
+  }
+
+  .gameA, .gameB, .gameC,.gameD {
+    position: static;
+    align-content: center;
+    margin-left: 55px;
+    margin-right:55px;
+    
+    
+  } 
+
+  .textA{
+  margin-top: 180px;
+  margin-left: 55px;
+
+}
+
+.textB{
+  margin-top: 460px;
+  margin-right: 55px;
+
+}
+
+.textC{
+  margin-top: 740px;
+  margin-left: 55px;
+
+}
+
+.textD{
+  margin-top: 1020px;
+  margin-right: 55px;
 }
 
 
@@ -403,6 +446,21 @@ footer {
   margin-top: 40px;
   position: static;
     
+  }
+
+  input {
+
+  width: 490px;  
+  }
+
+  .box {
+
+    width:490px;
+  }
+
+  .box-7{
+
+    width: 80px;
   }
 
 }
@@ -461,10 +519,29 @@ footer {
   width: 380px;
   margin-top: 40px;
   position: static;
-    
+
   }
 
+  input {
+
+  width: 370px;  
+  }
+
+  .box {
+
+    width: 370px;
+  }
+
+  .box-7{
+
+    width: 80px;
+  }
+    
+
 }
+
+
+
 
 
  
