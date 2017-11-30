@@ -121,6 +121,7 @@ a:active {
 .container {
 
   width: 960px;
+
   position: absolute;
   left: 100px;
 
@@ -299,6 +300,7 @@ input {
 footer {
 
   position: fixed;
+  
   left: 0;
   right: 0;
   bottom: 0;
@@ -338,6 +340,7 @@ footer {
   #insert1, #insert3, #insert4 {
 
   width: 340px;
+  margin-bottom: 50px;
   }
 
   #insert11 {
@@ -375,26 +378,28 @@ footer {
   } 
 
   .textA{
-  margin-top: 180px;
-  margin-left: 55px;
+    margin-top: 180px;
+    margin-left: 55px;
 
-}
+  }
 
-.textB{
-  margin-top: 460px;
-  margin-right: 55px;
+  .textB{
+    margin-top: 460px;
+    margin-right: 55px;
 
-}
+  }
 
-.textC{
-  margin-top: 740px;
-  margin-left: 55px;
+  .textC{
+    margin-top: 740px;
+    margin-left: 55px;
 
-}
+  }
 
-.textD{
-  margin-top: 1020px;
-  margin-right: 55px;
+  .textD{
+    margin-top: 1020px;
+    margin-right: 55px;
+  }
+
 }
 
 
@@ -444,6 +449,7 @@ footer {
   width: 500px;
   
   margin-top: 40px;
+  margin-bottom: 100px;
   position: static;
     
   }
@@ -461,6 +467,47 @@ footer {
   .box-7{
 
     width: 80px;
+  }
+
+  .gameA,.gameB,.gameC , .gameD {
+
+    position: relative;
+    align-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+
+  }
+
+
+  .textA {
+
+    margin-top: 180px;
+    margin-left:0px;
+    float: left;
+  }
+
+  .textB{
+
+    margin-top: 180px;
+    margin-right: 0px;
+  }
+
+  .textC{
+
+    margin-top: 460px;
+    margin-left:0px;
+    float:left;
+  }
+
+  .textD{
+
+    margin-top: 460px;
+    margin-right: 0px;
+  }
+
+  footer {
+
+    margin-top: 200px;
   }
 
 }
@@ -507,6 +554,7 @@ footer {
   #insert1, #insert3, #insert4
   {
     width: 380px;
+
   }
 
   #insert11
@@ -517,7 +565,7 @@ footer {
   #insert2 {
 
   width: 380px;
-  margin-top: 40px;
+  margin-bottom: 100px;
   position: static;
 
   }
@@ -536,7 +584,38 @@ footer {
 
     width: 80px;
   }
+
+  .gameA, .gameB, .gameC,.gameD {
+    position: static;
+    align-content: center;
+    margin-left: 70px;
+    margin-right:70px;
     
+    
+  } 
+
+  .textA{
+    margin-top: 180px;
+    margin-left: 70px;
+
+  }
+
+  .textB{
+    margin-top: 460px;
+    margin-right: 70px;
+
+  }
+
+  .textC{
+    margin-top: 740px;
+    margin-left: 70px;
+
+  }
+
+  .textD{
+    margin-top: 1020px;
+    margin-right: 70px;
+  }
 
 }
 
