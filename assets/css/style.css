@@ -72,9 +72,10 @@ a:active {
   left: 100px;
   width: 140px;
   height: 20px;
-  background: #4aaaa5;
-  
+  background: #4aaaa5; 
 }
+
+/*Header buttons on the right side*/
 
 #left, #middle, #right {
 
@@ -84,10 +85,8 @@ a:active {
   height: 20px;
   width: 58px;
   font-size: 16px;
-  color : #333;
-  
+  color : #333;  
 }
-
 
 #left {
 	
@@ -106,28 +105,19 @@ a:active {
 
 /*Container Layout*/
 
-/*.full {
-  position:absolute;
-  width: 100%;
-  
-  overflow: auto;
-  clear: both;
-  background: #ccc;
-
-}
-  e6ffff*/
-
-
 .container {
 
   width: 960px;
-
   position: absolute;
   left: 100px;
 
 }
 
-#insert1, #insert3, #insert4 {
+/* Main Section Layout
+inser1 for Index and Portfolio 
+insert3 for Contact*/
+
+#insert1, #insert3 {
 
 	position: relative;
 	left: 0px;
@@ -163,7 +153,7 @@ aside {
   border: 1px solid #eee;
 }
 
-
+/* Sidebar Layout*/
 
 #insert2 {
 
@@ -189,36 +179,7 @@ aside {
   border-bottom: 5px solid #4aaaa5;
 }
 
-/*Contact Page Boxes*/
-  
-.box {
-  
-  width: 590px;
-  height: 40px;
-  font-size: 20px;
-}
-  
-  
-.box-2 , .box-4 , .box-6 {
-  
-  top: 0px;
-  border: 2px solid lightgray;
-  
-}
-
-.box-6 {
-
-  height: 320px;
-
-}
-
-.box-7 {
-
-  text-align: center;
-  color: #ffffff;
-  width: 80px;
-  background: #4aaaa5;
-}
+/*Contact Page/ Form Files*/
 
 input {
   
@@ -228,20 +189,37 @@ input {
   height: 40px;
   font-size: 20px;
 }
+  
+.box {                 /*Contact Form Message Section*/
+  
+  width: 590px;
+  height: 40px;
+  font-size: 20px;
+}
+  
+.box-6 {
+
+  height: 320px;
+}
 
 
+.box-7 {                 /*Contact Form Button*/
 
+  text-align: center;
+  color: #ffffff;
+  width: 80px;
+  background: #4aaaa5;
+}
 
-/*Portfolio Page Boxes*/
+/*Portfolio File Boxes*/
 
 .clearfix::after{
   content:"";
   display: block;
   clear: both;
 }
-
   
- .gameA, .gameC {
+.gameA, .gameC {
 
   margin: 20px;
   left: 0px;
@@ -249,18 +227,18 @@ input {
   width: 230px;
   height: 230;
   float: left;
- } 
+} 
 
- .gameB, .gameD {
+.gameB, .gameD {
   margin: 20px;
   left: 0px;
   font-size: 20px;
   width: 230px;
   height: 230;
   float:right;
- }
+}
 
- .text {
+.text {
   position: absolute;
   margin: 20px;
   width: 200px;
@@ -300,7 +278,6 @@ input {
 footer {
 
   position: fixed;
-  
   left: 0;
   right: 0;
   bottom: 0;
@@ -311,16 +288,17 @@ footer {
   font-size: 12px;
   text-align: center;
   background: #666666;
-  border-top: #4aaaa5 5px solid;
-  
+  border-top: #4aaaa5 5px solid; 
 }
 
+/*Modification for screen smaller than 980px*/
 
 @media screen and (max-width: 980px) {
-  body {
+  /*body {
     background-color: green;
-  }
+  }*/
 
+  /*Header*/
 
   #left {
 
@@ -337,7 +315,11 @@ footer {
     left: 680px;
   }
 
-  #insert1, #insert3, #insert4 {
+  /* Main Section Layout
+inser1 for Index and Portfolio 
+insert3 for Contact*/
+
+  #insert1, #insert3 {
 
   width: 340px;
   margin-bottom: 50px;
@@ -349,15 +331,20 @@ footer {
   margin-left: 0px;
   }
 
+  /* Sidebar Layout*/
+
   #insert2 {
 
   left: 440px; 
   }
 
+  /*Contact Form"*/
+
   input {
 
   width: 330px;  
   }
+
   .box {
 
     width:330px;
@@ -368,13 +355,14 @@ footer {
     width: 80px;
   }
 
+  /*Portfolio Boxes*/
+
   .gameA, .gameB, .gameC,.gameD {
+
     position: static;
     align-content: center;
     margin-left: 55px;
-    margin-right:55px;
-    
-    
+    margin-right:55px;  
   } 
 
   .textA{
@@ -386,13 +374,11 @@ footer {
   .textB{
     margin-top: 460px;
     margin-right: 55px;
-
   }
 
   .textC{
     margin-top: 740px;
     margin-left: 55px;
-
   }
 
   .textD{
@@ -402,11 +388,14 @@ footer {
 
 }
 
+/*Modification for screen smaller than 768px*/
 
 @media screen and (max-width: 768px) {
-  body {
+  /*body {
     background-color: orange ;
-  }
+  }*/
+
+  /*Header*/
 
   #name{
 
@@ -430,10 +419,14 @@ footer {
 
   .container{
  
-  left: 50px; 
+    left: 50px; 
   }
 
-  #insert1, #insert3, #insert4
+  /* Main Section Layout
+inser1 for Index and Portfolio 
+insert3 for Contact*/
+
+  #insert1, #insert3
   {
     width: 500px;
     height: 100%;
@@ -443,20 +436,22 @@ footer {
   {
     width: 460px;
   }
-
+  /* Sidebar Layout*/
 
   #insert2 {
-  width: 500px;
-  
-  margin-top: 40px;
-  margin-bottom: 100px;
-  position: static;
+
+    width: 500px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    position: static;
     
   }
 
+  /*Contact Form"*/
+
   input {
 
-  width: 490px;  
+    width: 490px;
   }
 
   .box {
@@ -469,13 +464,14 @@ footer {
     width: 80px;
   }
 
+  /*Portfolio File Boxes*/
+
   .gameA,.gameB,.gameC , .gameD {
 
     position: relative;
     align-content: center;
     margin-left: 0px;
     margin-right: 0px;
-
   }
 
 
@@ -512,8 +508,16 @@ footer {
 
 }
 
+/*Modification for screen smaller than 640px*/
 
 @media screen and (max-width: 640px) {
+
+  /*body {
+
+    background-color: yellow ;
+  }*/
+
+  /*Header*/
 
   header {
   position: static;
@@ -539,19 +543,16 @@ footer {
     left: 400px;
   }
 
-
-  body {
-    background-color: yellow ;
-  }
-
-
-
   .container{
 
   left: 50px; 
   }
 
-  #insert1, #insert3, #insert4
+  /* Main Section Layout
+inser1 for Index and Portfolio 
+insert3 for Contact*/
+
+  #insert1, #insert3
   {
     width: 380px;
 
@@ -562,13 +563,16 @@ footer {
     width: 340px;
   }
 
+  /* Sidebar Layout*/
+
   #insert2 {
 
-  width: 380px;
-  margin-bottom: 100px;
-  position: static;
-
+    width: 380px;
+    margin-bottom: 100px;
+    position: static;
   }
+
+  /*Contact Form"*/
 
   input {
 
@@ -585,36 +589,39 @@ footer {
     width: 80px;
   }
 
+  /*Portfolio File Boxes*/
+
   .gameA, .gameB, .gameC,.gameD {
+
     position: static;
     align-content: center;
-    margin-left: 70px;
-    margin-right:70px;
-    
-    
+    margin-left: 75px;
+    margin-right:75px; 
   } 
 
   .textA{
+
     margin-top: 180px;
-    margin-left: 70px;
+    margin-left: 75px;
 
   }
 
   .textB{
-    margin-top: 460px;
-    margin-right: 70px;
 
+    margin-top: 460px;
+    margin-right: 75px;
   }
 
   .textC{
-    margin-top: 740px;
-    margin-left: 70px;
 
+    margin-top: 740px;
+    margin-left: 75px;
   }
 
   .textD{
+
     margin-top: 1020px;
-    margin-right: 70px;
+    margin-right: 75px;
   }
 
 }
